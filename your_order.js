@@ -1,16 +1,17 @@
 function order(words){
-  let arr=words.split(" ")
-
+  let new_words=words.split(" ")
   let obj={}
-  for(let ele of arr){
-    let number=getNumber(ele)
-    obj[number]=ele; 
+
+  for (let element of new_words){
+    number = test(element)
+    obj[number]=element
   }
   return Object.values(obj).join(" ")
 }
 
-console.log(order("is6 Thi1s T4est 3a"))
-
-function getNumber(str){
-  return str.match(/\d/g)[0];
+function test(item){
+  return item.match(/\d/g)
 }
+
+
+console.log(order("3a is2 Thi1s T4est"))
