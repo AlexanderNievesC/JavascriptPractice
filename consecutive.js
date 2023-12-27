@@ -1,5 +1,9 @@
 function longestConsec(strarr, k){
+    let result=[]
 
+    for (let i=0; i<strarr.length;i++){
+
+    }
     
     return
 }
